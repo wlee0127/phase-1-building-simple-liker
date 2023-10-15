@@ -3,7 +3,11 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-document.getElementById("modal").hidden = true;
+modal = document.getElementById("modal");
+modalMessage = document.getElementById("modal-message");
+modal.setAttribute("class", "hidden");
+modalMessage.setAttribute("class", "hidden");
+//document.getElementById("modal").hidden = true;
 
 let heartClass = document.getElementsByClassName("like-glyph");
 let errorModal = document.getElementById("modal");
